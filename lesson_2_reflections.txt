@@ -9,3 +9,32 @@ Staging area is intermediate area between working directory and repository.
 When we create a new repository, then through the help of staging area, we can choose which 
 files form working directory should be added to repository in the particular commit. 
 Thus, having one logical change per commit.
+
+How can you use the staging area to make sure you have one commit per logical
+change?
+
+We can add required files in staging area intead of all and then make commit
+
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+
+In situation, where we need linear chaining of commits, we will be having the master branch 
+intact but at the same time we can add other feature to our app which we are not sure to add
+in final release or make our app for any other language or fix a bug
+
+How do the diagrams help you visualize the branch structure?
+
+Git commits are not linear , each commit has reference to its parent and there can be 
+unreachable commits as well
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+
+All code changes in both branches are merged together and the latest meged commit
+will have reference to both of its parents and thus represented in diagram
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges
+manually?
+
+If there is no conflict , git will do automatic merging. However, if there is a conflict
+in merge then it is better to resolve it manually
